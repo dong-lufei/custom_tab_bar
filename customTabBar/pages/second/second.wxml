@@ -1,0 +1,6 @@
+<!--pages/second/second.wxml-->
+<template name="second">
+
+	<view>pages/second/second.wxml</view>
+
+</template>

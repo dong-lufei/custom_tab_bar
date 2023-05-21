@@ -1,0 +1,5 @@
+/* pages/app/app.wxss */
+
+page{
+	padding-bottom: 46rpx;
+}

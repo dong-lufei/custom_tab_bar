@@ -1,0 +1,8 @@
+<!--components/CustomTabBar/CustomTabBar.wxml-->
+<view class="customTabBar">
+	<view wx:for="{{items}}" wx:key="index" class="customTabBarItem" bindtap="handleTap" data-index="{{index}}">
+		<image class="customTabBarIcon" src="{{item.iconPath}}" wx:if="{{selectedIndex!=index}}"></image>
+		<image class="customTabBarIconActive" src="{{item.selectedIconPath}}" wx:if="{{selectedIndex==index}}"></image>
+		<text class="{{selectedIndex==index?'active':''}}">{{item.text}}</text>
+	</view>
+</view>

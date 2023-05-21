@@ -1,0 +1,31 @@
+{
+	"pages": [
+		"pages/index/index",
+		"pages/second/second",
+		"pages/logs/logs"
+	],
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#fff",
+		"navigationBarTitleText": "Weixin",
+		"navigationBarTextStyle": "black"
+	},
+	"style": "v2",
+	"sitemapLocation": "sitemap.json",
+	"tabBar": {
+		"custom": true,
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "第1页"
+			}, {
+				"pagePath": "pages/second/second",
+				"text": "第2页"
+			},
+			{
+				"pagePath": "pages/logs/logs",
+				"text": "第3页"
+			}
+		]
+	},
+	"debug": true
+}

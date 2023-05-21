@@ -1,0 +1,27 @@
+<!--pages/wrap/wrap.wxml-->
+
+<!--模板引入-->
+<import src="../index/index.wxml" />
+<import src="../second/second.wxml" />
+<import src="../logs/logs.wxml" />
+
+
+<view class="container" style="padding-bottom: 100rpx;">
+  <view class="content">
+    <!-- 根据当前选中的tab展示不同的内容 -->
+    <view wx:if="{{selectedIndex==0}}" class="page1">
+      <text>这是第一页的内容</text>
+      <!--模板使用is-->
+      <template is="home" />
+    </view>
+    <view wx:if="{{selectedIndex==1}}" class="page2">
+      <text>这是第二页的内容</text>
+      <template is="second" />
+    </view>
+    <view wx:if="{{selectedIndex==2}}" class="page3">
+      <text>这是第三页的内容</text>
+      <template is="logs" />
+    </view>
+  </view>
+  <CustomTabBar class="customTabBar" height="{{tabbarHeight}}" backgroundColor="{{tabbarBackgroundColor}}" isIphoneX="{{isIphoneX}}" show="{{tabbarShow}}" items="{{tabbarItems}}" selectedIndex="{{selectedIndex}}" bind:change="handleTabbarChange"></CustomTabBar>
+</view>

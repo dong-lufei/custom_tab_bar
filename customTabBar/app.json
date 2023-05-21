@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/wrap/wrap",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/second/second"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "CustomTabBar": "/components/CustomTabBar/CustomTabBar"
+  },
+  "tabBar": {
+    "custom": true,
+    "list": [
+      {
+        "pagePath": "pages/wrap/wrap",
+        "text": "自定义要写"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "为了凑数至少2个"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "debug": false
+}

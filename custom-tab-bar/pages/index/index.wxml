@@ -20,4 +20,16 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
+
+  <view>
+    九九乘法表：
+  </view>
+  <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="i" wx:key="i">
+    <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="j" wx:key="j">
+      <view wx:if="{{i <= j}}">
+        {{i}} * {{j}} = {{i * j}}
+      </view>
+    </view>
+  </view>
+
 </view>
