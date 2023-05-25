@@ -1,0 +1,26 @@
+<!--index.wxml-->
+
+
+<view class="container">
+
+  <!-- 引入自定义导航栏组件 -->
+  <custom-nav-bar style='display:block;width:100%;height: {{navbarHeight}}px;' />
+
+  <view class="userinfo">
+    <view>
+      不建议使用 open-data ：
+    </view>
+
+  </view>
+  <view class="usermotto">
+    <view style="text-align: center;" class="user-motto">{{motto}}</view>
+    <button bindtap="toOther" class="user-motto">跳 other 页</button>
+
+    <text>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, eos asperiores vitae similique vero nihil delectus quia veniam laudantium voluptatum illo facere, culpa aspernatur aliquid. At maiores quos esse mollitia.
+      Quae tempore, laborum quia, eius iure obcaecati ab similique esse tempora nobis temporibus officia illum harum quaerat quo accusamus quibusdam deleniti minus at maiores blanditiis praesentium! Accusantium error libero saepe.
+      Impedit corrupti ex distinctio quasi labore ea enim aliquam alias natus rerum vitae tenetur culpa laudantium optio ut omnis dolores nihil vero pariatur expedita quaerat, repellat perspiciatis? A, voluptate at.
+      Aliquam tempora impedit, eos adipisci officiis quas et nesciunt fuga praesentium, possimus eum veritatis? Officiis consequuntur aliquam reprehenderit aliquid, voluptate pariatur eaque sunt nostrum deleniti ab repudiandae, praesentium nihil exercitationem?
+      Nostrum, cum, ex tenetur ullam quasi porro corporis, non sint quaerat quis sunt unde inventore aliquam hic vero nulla. Ab ullam magni cupiditate mollitia officia debitis nisi dolore sunt eveniet!
+      At molestiae voluptatibus facilis itaque ipsa tenetur a excepturi dignissimos, sed quae error iure, corporis incidunt vel necessitatibus blanditiis laborum soluta quo perspiciatis! Culpa consequatur error vel! Adipisci, officiis ea?</text>
+  </view>
+</view>

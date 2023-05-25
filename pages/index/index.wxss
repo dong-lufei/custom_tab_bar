@@ -1,0 +1,12 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #aaa;
+}
+
+page {
+  padding-bottom: calc(96rpx + env(safe-area-inset-bottom));
+  background: radial-gradient(circle, rgba(2,0,36,.5) 0%, rgba(9,121,54,1) 35%, rgba(0,212,255,1) 100%);
+}

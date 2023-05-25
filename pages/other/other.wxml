@@ -1,0 +1,9 @@
+<!--pages/other/other.wxml-->
+
+<view>
+	<view style="text-align: center;font-weight:bold;">这是 other 页面</view>
+
+	<view style="margin-top: 1rem;text-indent: 2rem;">
+		没有使用自定义导航栏组件
+	</view>
+</view>

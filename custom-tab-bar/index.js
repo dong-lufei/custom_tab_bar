@@ -36,9 +36,11 @@ Component({
 			const url = data.path
 
 			wx.switchTab({ url })
+			console.log("switchTab",data.index);
 			this.setData({
 				selected: data.index
 			})
+			console.log("this.selected",this.data.selected);
 
 		}
 	}

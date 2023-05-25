@@ -1,0 +1,27 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.log-item {
+  margin: 10rpx;
+}
+
+
+
+/* 从外部传入导航栏组件的样式 */
+/* 页面 覆盖导航栏背景色 */
+.outer-nav-bgc {
+  background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%) !important;
+}
+
+/* 页面 覆盖导航栏标题颜色 */
+.outer-nav-title {
+  color: #fff !important;
+}
+
+/* 导航栏返回键样式 */
+.outer-back {
+  width: 72rpx !important;
+  /* width: 42rpx !important; */
+}

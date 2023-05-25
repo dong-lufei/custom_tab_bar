@@ -1,0 +1,13 @@
+<!--logs.wxml-->
+<!-- <custom-nav-bar style="display:block;width:100%;height: {{navbarHeight}}px;" bind:goBack="_goBack" /> -->
+
+<view class="container log-list">
+  <!-- 引入自定义导航栏组件 -->
+
+  <custom-nav-bar style="display:block;width:100%;height: {{navbarHeight}}px;" bind:goBack="_goBack" outer-nav-bgc="outer-nav-bgc" outer-nav-title="outer-nav-title" outer-back="outer-back" navBackShow="{{navBackShow}}" navbarTitle="{{navbarTitle}}" />
+  <!-- navBackSrc="{{navBackSrc}}" -->
+
+  <block wx:for="{{logs}}" wx:key="timeStamp" wx:for-item="log">
+    <text class="log-item">{{index + 1}}. {{log.date}}</text>
+  </block>
+</view>

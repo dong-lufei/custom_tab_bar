@@ -1,0 +1,53 @@
+/* components/custom-nav-bar/index.wxss */
+
+/* 顶部固定定位   标题要居中   自定义按钮和标题要和右边微信原生的胶囊上下对齐 */
+.nav-wrap {
+	display: flex;
+	position: fixed;
+	width: 750rpx;
+	top: 0;
+	right: 0;
+	left: 0;
+	/* 整个导航栏到状态栏区域的背景色 */
+	background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+	z-index: 999;
+}
+
+/* 返回键 */
+.nav-back-wrap {
+	/* 让里面的图片元素垂直居中 */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 140rpx;
+	/* background-color: skyblue; */
+	overflow: hidden;
+}
+
+/* 返回图标 */
+.nav-back-icon {
+	width: 100rpx;
+	height: 100%;
+	padding: 4rpx;
+	box-sizing: border-box;
+	/* background-color: green; */
+}
+
+/* 标题 */
+.nav-title {
+	position: absolute;
+	max-width: 400rpx;
+	right: 0;
+	left: 0;
+	margin: auto;
+	text-align: center;
+	/* 超出部分省略号显示 */
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	/* 导航栏标题文字的背景色 */
+	/* background-color: deeppink; */
+	/* 字体设置 */
+	color: #111111;
+	font-size: 32rpx;
+}

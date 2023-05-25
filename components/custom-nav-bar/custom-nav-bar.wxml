@@ -1,0 +1,9 @@
+<!--components/custom-nav-bar/index.wxml-->
+
+<!-- 默认为黑色的返回键-->
+<view class='nav-wrap outer-nav-bgc' style='height: {{statusBarHeight + navBarHeight}}px;'>
+	<view class='nav-back-wrap' style='margin-top: {{statusBarHeight}}px; height: {{navBarHeight}}px;' wx:if='{{navBackShow}}' bindtap='_navback'>
+		<image class='nav-back-icon outer-back' src='{{navBackSrc}}' mode='aspectFit'></image>
+	</view>
+	  <view class='nav-title outer-nav-title' style='margin-top: {{statusBarHeight}}px; height: {{navBarHeight}}px;line-height:  {{navBarHeight}}px;'>{{navbarTitle}}</view>
+</view>

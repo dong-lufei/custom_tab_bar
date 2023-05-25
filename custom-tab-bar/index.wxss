@@ -8,11 +8,11 @@
   height: 96rpx;
   padding-bottom: env(safe-area-inset-bottom);
   /* background: white; */
-  background: radial-gradient(circle, rgb(238, 219, 227) 0%, rgb(200, 215, 231) 100%);
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
 }
 
 .tab-bar-border {
-	position: absolute;
+  position: absolute;
   left: 0;
   top: 0;
   width: 100%;
@@ -33,6 +33,7 @@
 .tab-bar-icon {
   width: 54rpx;
   height: 54rpx;
+  border-radius: 50%;
 }
 
 .tab-bar-text {

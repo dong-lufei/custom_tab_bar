@@ -1,5 +1,0 @@
-/**app.wxss**/
-
-page{
-  padding-bottom: 150rpx;
-}
